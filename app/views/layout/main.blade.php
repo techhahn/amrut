@@ -33,14 +33,17 @@
 
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            @if(!Auth::check())
             <ul class="nav navbar-nav">
-                <li><a href="/users/login">Login</a></li>
-                <li><a href="/users/register">Register</a></li>
+                <li class="active"><a href="/users/login">Login</a></li>
             </ul>
+            @endif
+            @if(Auth::check())
             <ul class="nav navbar-nav navbar-right">
                 <li><a href="#">Logout</a></li>
                 <li><a href="#">My Profile</a></li>
             </ul>
+            @endif
         </div><!-- /.navbar-collapse -->
     </div><!-- /.container-fluid -->
 </nav>
@@ -62,10 +65,9 @@
 
 
 </div> <!-- /container -->        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-<script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.0.min.js"><\/script>')</script>
+<script>window.jQuery || document.write('<script src="packages/vendor/jquery-1.11.0.min.js"><\/script>')</script>
 
-<script src="packages/bootstrap/js/bootstrap.min.js"></script>
-
-<script src="packages/js/main.js"></script>
+{{ HTML::script('packages/bootstrap/js/bootstrap.min.js')}}
+{{ HTML::script('packages/js/main.js')}}
 </body>
 </html>

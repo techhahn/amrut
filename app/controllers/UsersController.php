@@ -32,12 +32,8 @@ class UsersController extends BaseController {
         $validator = Validator::make(Input::all(), User::$LoginRules);
         if($validator->passes()) {
             if(Auth::attempt(array('username'=>Input::get('username'), 'password'=>Input::get('password')))) {
-                if(Auth::user()->confirmed) {
-                    return Redirect::to('/')->with('message', 'logged In Sucessfully');
-                } else {
-                    return Redirect::to('users/login')->with('message', 'Stop! You are not authorised to use this system.');
-                    Auth::logout();
-                }
+                $this->layout->content = View::make('users.dashboard')->with('message', 'logged In Sucessfully');
+                    //return Redirect::to('/')->with('message', 'logged In Sucessfully');
             }
             else {
                 return Redirect::to('users/login')->with('message', 'Error Username or Password');
