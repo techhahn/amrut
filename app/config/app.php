@@ -65,7 +65,7 @@ return array(
 	|
 	*/
 
-	'key' => 'Lz5yZvmOl06WqeJP7Qw1zpE7HowSrHfO',
+	'key' => '7ksJbx7N1MapIpvjQhbG9tpojTJnN2L9',
 
 	/*
 	|--------------------------------------------------------------------------
@@ -113,6 +113,7 @@ return array(
 		'Illuminate\Validation\ValidationServiceProvider',
 		'Illuminate\View\ViewServiceProvider',
 		'Illuminate\Workbench\WorkbenchServiceProvider',
+        'Way\Generators\GeneratorsServiceProvider',
 
 	),
 

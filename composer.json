@@ -4,7 +4,8 @@
 	"keywords": ["framework", "laravel"],
 	"require": {
 		"laravel/framework": "4.0.*",
-        "twitter/bootstrap": "*"
+        "twitter/bootstrap": "*",
+        "components/jquery": "1.9.*"
 	},
     "require-dev": {
         "way/generators": "2.*"
