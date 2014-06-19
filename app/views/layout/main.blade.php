@@ -53,7 +53,7 @@
                                             <a href="#">Change Photo</a></p>
                                     </div>
                                     <div class="col-md-7">
-                                        <span>Bhaumik Patel</span>
+                                        <span>{{ Auth::user()->username }}</span>
                                         <p class="text-muted small">
                                             mail@gmail.com</p>
                                         <div class="divider">
@@ -69,7 +69,7 @@
                                             <a href="#" class="btn btn-default btn-sm">Change Passowrd</a>
                                         </div>
                                         <div class="col-md-6">
-                                            <a href="http://www.jquery2dotnet.com" class="btn btn-default btn-sm pull-right">Sign Out</a>
+                                            {{ HTML::link('users/logout', 'Sign Out', array('class'=>'btn btn-default btn-sm pull-right')) }}
                                         </div>
                                     </div>
                                 </div>
