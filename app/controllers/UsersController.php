@@ -36,7 +36,7 @@ class UsersController extends BaseController {
         $validator = Validator::make(Input::all(), User::$LoginRules);
         if($validator->passes()) {
             if(Auth::attempt(array('username'=>Input::get('username'), 'password'=>Input::get('password')))) {
-                return View::make('layout.dashboard')->with('message', 'logged In Sucessfully');
+                return Redirect::to('dashboard/dashboard')->with('message', 'logged In Sucessfully');
             }
             else {
                 return Redirect::to('users/login')->with('message', 'Error Username or Password');
@@ -45,6 +45,11 @@ class UsersController extends BaseController {
         else{
             return Redirect::to('users/login')->withErrors($validator)->withInput();
         }
+    }
+
+    public function getLogout() {
+        Auth::logout();
+        return Redirect::to('users/login')->with('message', 'Logged Out');
     }
 
 

@@ -12,6 +12,7 @@
 */
 
 Route::controller('users', 'UsersController');
+Route::controller('dashboard', 'DashboardController');
 
 Route::get('/', function()
 {
