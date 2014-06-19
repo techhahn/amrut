@@ -3,6 +3,10 @@
 class UsersController extends BaseController {
     protected $layout = "layout.main";
 
+    public function __construct() {
+        $this->beforeFilter('csrf', array('on'=>'post'));
+    }
+
 
     public function getLogin() {
         $this->layout->content = View::make('users.login');
@@ -33,7 +37,6 @@ class UsersController extends BaseController {
         if($validator->passes()) {
             if(Auth::attempt(array('username'=>Input::get('username'), 'password'=>Input::get('password')))) {
                 $this->layout->content = View::make('users.dashboard')->with('message', 'logged In Sucessfully');
-                    //return Redirect::to('/')->with('message', 'logged In Sucessfully');
             }
             else {
                 return Redirect::to('users/login')->with('message', 'Error Username or Password');
