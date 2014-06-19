@@ -95,7 +95,7 @@
     @endif
     <!-- Example row of columns -->
 
-       {{ $content }}
+        @yield('content')
 
 
 

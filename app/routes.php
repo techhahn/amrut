@@ -15,5 +15,5 @@ Route::controller('users', 'UsersController');
 
 Route::get('/', function()
 {
-	return Auth::user();
+    Auth::logout();
 });

@@ -1,3 +1,7 @@
+@extends('layout.main')
+
+@section('content')
+
 <div class="row">
     <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 bhoechie-tab-container">
         <div class="col-lg-1 col-md-1 col-sm-2 col-xs-2 bhoechie-tab-menu">
@@ -63,3 +67,5 @@
         </div>
     </div>
 </div>
+
+@stop
