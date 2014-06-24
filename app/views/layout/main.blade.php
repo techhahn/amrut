@@ -39,7 +39,144 @@
             </ul>
             @endif
             @if(Auth::check())
+            <ul class="nav navbar-nav">
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">File <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">Product</a></li>
+                        <li><a href="#">Customer</a></li>
+                        <li><a href="#">Company</a></li>
+                        <li><a href="#">Supplier</a></li>
+                        <li><a href="#">Salesman</a></li>
+
+                        <li class="divider"></li>
+                        <li><a href="#">Rep</a></li>
+                        <li><a href="#">Area</a></li>
+                        <li><a href="#">Bank Area</a></li>
+                        <li><a href="#">Town</a></li>
+
+                        <li class="divider"></li>
+                        <li><a href="#">Bank</a></li>
+                        <li><a href="#">Generic/Classification</a></li>
+
+                        <li class="divider"></li>
+                        <li><a href="#">Web Rep.</a></li>
+                    </ul>
+                </li>
+
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Transactions <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">Invoice</a></li>
+
+                        <li class="divider"></li>
+                        <li><a href="#">Receipts</a></li>
+                        <li><a href="#">Edit Old Receipts</a></li>
+
+                        <li class="divider"></li>
+                        <li><a href="#">Branch Transfer</a></li>
+
+                        <li class="divider"></li>
+                        <li><a href="#">Credit Note</a></li>
+                        <li><a href="#">Debit Note</a></li>
+
+                        <li class="divider"></li>
+                        <li><a href="#">Godown Challan</a></li>
+
+                        <li class="dropdown-submenu">
+                            <a tabindex="-1" href="#">More options</a>
+                            <ul class="dropdown-menu">
+                                <li><a tabindex="-1" href="#">Second level</a></li>
+                                <li class="dropdown-submenu">
+                                    <a href="#">More..</a>
+                                    <ul class="dropdown-menu">
+                                        <li><a href="#">3rd level</a></li>
+                                        <li><a href="#">3rd level</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#">Second level</a></li>
+                                <li><a href="#">Second level</a></li>
+                            </ul>
+                        </li>
+
+                        <li class="divider"></li>
+                        <li><a href="#">Send Data</a></li>
+                        <li><a href="#">Send Scheme Data</a></li>
+                        <li><a href="#">Send MAster Files</a></li>
+                        <li><a href="#">E-mail</a></li>
+                    </ul>
+                </li>
+
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Reports <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">Action</a></li>
+                        <li><a href="#">Another action</a></li>
+                        <li><a href="#">Something else here</a></li>
+                        <li class="divider"></li>
+                        <li><a href="#">Separated link</a></li>
+                        <li class="divider"></li>
+                        <li><a href="#">One more separated link</a></li>
+                    </ul>
+                </li>
+
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Closings <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">Action</a></li>
+                        <li><a href="#">Another action</a></li>
+                        <li><a href="#">Something else here</a></li>
+                        <li class="divider"></li>
+                        <li><a href="#">Separated link</a></li>
+                        <li class="divider"></li>
+                        <li><a href="#">One more separated link</a></li>
+                    </ul>
+                </li>
+
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">System <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">Action</a></li>
+                        <li><a href="#">Another action</a></li>
+                        <li><a href="#">Something else here</a></li>
+                        <li class="divider"></li>
+                        <li><a href="#">Separated link</a></li>
+                        <li class="divider"></li>
+                        <li><a href="#">One more separated link</a></li>
+                    </ul>
+                </li>
+
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Windows <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">Action</a></li>
+                        <li><a href="#">Another action</a></li>
+                        <li><a href="#">Something else here</a></li>
+                        <li class="divider"></li>
+                        <li><a href="#">Separated link</a></li>
+                        <li class="divider"></li>
+                        <li><a href="#">One more separated link</a></li>
+                    </ul>
+                </li>
+
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Help <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">Action</a></li>
+                        <li><a href="#">Another action</a></li>
+                        <li><a href="#">Something else here</a></li>
+                        <li class="divider"></li>
+                        <li><a href="#">Separated link</a></li>
+                        <li class="divider"></li>
+                        <li><a href="#">One more separated link</a></li>
+                    </ul>
+                </li>
+
+            </ul>
+
             <ul class="nav navbar-nav navbar-right">
+
+
                 <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Account
                         <b class="caret"></b></a>
                     <ul class="dropdown-menu">
@@ -75,6 +212,7 @@
                                 </div>
                             </div>
                         </li>
+
                     </ul>
                 </li>
             </ul>
@@ -84,7 +222,7 @@
 </nav>
 
 
-<div class="container">
+<div class="container container-full">
     @if(Session::has('message'))
     <div class="alert alert-warning alert-dismissable">
         <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
@@ -100,8 +238,8 @@
 
 
 </div> <!-- /container -->        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-<script>window.jQuery || document.write('<script src="packages/vendor/jquery-1.11.0.min.js"><\/script>')</script>
-
+<script>window.jQuery || document.write("{{ HTML::script('packages/jquery/jquery.js') }}")</script>
+{{ HTML::script('packages/jquery/jquery.js')}}
 {{ HTML::script('packages/bootstrap/js/bootstrap.min.js')}}
 {{ HTML::script('packages/js/main.js')}}
 </body>
