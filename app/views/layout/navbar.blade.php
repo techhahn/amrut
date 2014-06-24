@@ -63,94 +63,201 @@
                     <li class="divider"></li>
                     <li><a href="#">Godown Challan</a></li>
 
-                    <li class="dropdown-submenu">
-                        <a tabindex="-1" href="#">More options</a>
-                        <ul class="dropdown-menu">
-                            <li><a tabindex="-1" href="#">Second level</a></li>
-                            <li class="dropdown-submenu">
-                                <a href="#">More..</a>
-                                <ul class="dropdown-menu">
-                                    <li><a href="#">3rd level</a></li>
-                                    <li><a href="#">3rd level</a></li>
-                                </ul>
-                            </li>
-                            <li><a href="#">Second level</a></li>
-                            <li><a href="#">Second level</a></li>
-                        </ul>
-                    </li>
-
                     <li class="divider"></li>
                     <li><a href="#">Send Data</a></li>
                     <li><a href="#">Send Scheme Data</a></li>
                     <li><a href="#">Send MAster Files</a></li>
                     <li><a href="#">E-mail</a></li>
+
+                    <li class="divider"></li>
+                    <li class="dropdown-submenu">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Receive</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Stock From Branch</a></li>
+                            <li><a href="#">Exp./Brk. From Branch</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="divider"></li>
+                    <li class="dropdown-submenu">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Brackage/Expiry Manager</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Returns Entry</a></li>
+
+                            <li class="divider"></li>
+                            <li><a href="#">Customer Returns Advice</a></li>
+                            <li><a href="#">Company Challan</a></li>
+
+                            <li class="divider"></li>
+                            <li><a href="#">Customer Return Advice Copy</a></li>
+                            <li><a href="#">Company Advice Copy</a></li>
+
+                            <li class="divider"></li>
+                            <li><a href="#">Companywise Pending</a></li>
+                            <li><a href="#">Companywise Returns</a></li>
+
+                            <li class="divider"></li>
+                            <li><a href="#">Customerwise Returns</a></li>
+
+                            <li class="divider"></li>
+                            <li><a href="#">Return Advice Cancellation</a></li>
+
+                            <li class="divider"></li>
+                            <li><a href="#">Edit Company Challan</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="divider"></li>
+                    <li><a href="#">Purchase Return</a></li>
+
+                    <li class="divider"></li>
+                    <li><a href="#">Order</a></li>
+                    <li><a href="#">Order Initialization</a></li>
+
+                    <li class="divider"></li>
+                    <li><a href="#">Pending Order</a></li>
+                    <li><a href="#">Initialize Short Item List...</a></li>
+
+                    <li class="divider"></li>
+                    <li><a href="#">Duplicate Copy</a></li>
                 </ul>
             </li>
 
             <li class="dropdown">
                 <a href="#" class="dropdown-toggle" data-toggle="dropdown">Reports <b class="caret"></b></a>
                 <ul class="dropdown-menu">
-                    <li><a href="#">Action</a></li>
-                    <li><a href="#">Another action</a></li>
-                    <li><a href="#">Something else here</a></li>
+
+                    <li class="dropdown-submenu">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Sales</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Journal</a></li>
+                            <li><a href="#">List</a></li>
+
+                            <li class="divider"></li>
+                            <li><a href="#">Company Wise</a></li>
+                            <li><a href="#">Townwise</a></li>
+
+                            <li class="divider"></li>
+                            <li><a href="#">Areawise</a></li>
+                            <li><a href="#">Areawise Productwise</a></li>
+                            <li><a href="#">Areawise Companywise</a></li>
+
+                            <li class="divider"></li>
+                            <li><a href="#">Repwise Billwise</a></li>
+                            <li><a href="#">Repwise</a></li>
+
+                            <li class="divider"></li>
+                            <li><a href="#">Customerwise</a></li>
+                            <li><a href="#">Customerwise Billwise</a></li>
+                            <li><a href="#">Customerwise Monthly Sales</a></li>
+
+                            <li class="divider"></li>
+                            <li><a href="#">Product</a></li>
+                            <li><a href="#">Free Without Free Stock</a></li>
+                            <li><a href="#">Under Rated</a></li>
+                        </ul>
+                    </li>
+
                     <li class="divider"></li>
-                    <li><a href="#">Separated link</a></li>
+                    <li><a href="#">Delivery Reports</a></li>
+
                     <li class="divider"></li>
-                    <li><a href="#">One more separated link</a></li>
+                    <li class="dropdown-submenu">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Purchase</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">List</a></li>
+                            <li><a href="#">Supplierwise</a></li>
+
+                            <li class="divider"></li>
+                            <li><a href="#">Replacement List</a></li>
+                            <li><a href="#">Supplierwise Replacement</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="divider"></li>
+                    <li><a href="#">Locked Products....</a></li>
+                    <li><a href="#">Pending Delivery Notes....</a></li>
+                    <li><a href="#">Rate Edited Products....</a></li>
+
+                    <li class="divider"></li>
+                    <li class="dropdown-submenu">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Stock</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Stock & Sale Statement</a></li>
+                            <li><a href="#">Combined Stock and Sales Statement</a></li>
+                            <li><a href="#">Companywise Stock Value</a></li>
+                            <li><a href="#">Closing Stock Statement</a></li>
+                            <li><a href="#">Stock Ledger</a></li>
+                            <li><a href="#">Expiry Forcast</a></li>
+                            <li><a href="#">Shortage Items In Store</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="divider"></li>
+                    <li class="dropdown-submenu">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Master List</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Customer List</a></li>
+                            <li><a href="#">Company List</a></li>
+                            <li><a href="#">Products List</a></li>
+                            <li><a href="#">Rep List</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Price List</a></li>
+                    <li><a href="#">Scheme Circular</a></li>
+
+                    <li class="divider"></li>
+                    <li><a href="#">Quick View</a></li>
+                    <li><a href="#">SPG Graph</a></li>
+                    <li><a href="#">Company Sales Graph</a></li>
+
                 </ul>
             </li>
 
-            <li class="dropdown">
-                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Closings <b class="caret"></b></a>
-                <ul class="dropdown-menu">
-                    <li><a href="#">Action</a></li>
-                    <li><a href="#">Another action</a></li>
-                    <li><a href="#">Something else here</a></li>
-                    <li class="divider"></li>
-                    <li><a href="#">Separated link</a></li>
-                    <li class="divider"></li>
-                    <li><a href="#">One more separated link</a></li>
-                </ul>
-            </li>
+            <li><a href="#">Monthly Closing</a></li>
 
             <li class="dropdown">
                 <a href="#" class="dropdown-toggle" data-toggle="dropdown">System <b class="caret"></b></a>
                 <ul class="dropdown-menu">
-                    <li><a href="#">Action</a></li>
-                    <li><a href="#">Another action</a></li>
-                    <li><a href="#">Something else here</a></li>
+                    <li><a href="#">Backup</a></li>
+                    <li><a href="#">Restore</a></li>
+
                     <li class="divider"></li>
-                    <li><a href="#">Separated link</a></li>
+                    <li><a href="#">Change System Date</a></li>
+                    <li><a href="#">Previous Months Data</a></li>
+
                     <li class="divider"></li>
-                    <li><a href="#">One more separated link</a></li>
+                    <li><a href="#">Refresh Stock</a></li>
+
+                    <li class="divider"></li>
+                    <li><a href="#">Message Settings</a></li>
+
+                    <li class="divider"></li>
+                    <li><a href="#">Options</a></li>
+
+                    <li class="divider"></li>
+                    <li><a href="#">Set Scheme Data</a></li>
+
+                    <li class="divider"></li>
+                    <li><a href="#">Find & Delete Old Products</a></li>
+
+                    <li class="divider"></li>
+                    <li class="dropdown-submenu">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Accounts Options</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Set Unit Name</a></li>
+                            <li><a href="#">Account Posting Heads</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="divider"></li>
+                    <li><a href="#">Tax Change</a></li>
+
                 </ul>
             </li>
 
-            <li class="dropdown">
-                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Windows <b class="caret"></b></a>
-                <ul class="dropdown-menu">
-                    <li><a href="#">Action</a></li>
-                    <li><a href="#">Another action</a></li>
-                    <li><a href="#">Something else here</a></li>
-                    <li class="divider"></li>
-                    <li><a href="#">Separated link</a></li>
-                    <li class="divider"></li>
-                    <li><a href="#">One more separated link</a></li>
-                </ul>
-            </li>
 
-            <li class="dropdown">
-                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Help <b class="caret"></b></a>
-                <ul class="dropdown-menu">
-                    <li><a href="#">Action</a></li>
-                    <li><a href="#">Another action</a></li>
-                    <li><a href="#">Something else here</a></li>
-                    <li class="divider"></li>
-                    <li><a href="#">Separated link</a></li>
-                    <li class="divider"></li>
-                    <li><a href="#">One more separated link</a></li>
-                </ul>
-            </li>
+            <li><a href="#">About</a></li>
 
         </ul>
 
@@ -159,7 +266,7 @@
 
             <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Account
                     <b class="caret"></b></a>
-                <ul class="dropdown-menu">
+                <ul class="dropdown-menu dropdown-menu-account">
                     <li>
                         <div class="navbar-content">
                             <div class="row">

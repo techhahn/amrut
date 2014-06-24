@@ -32,8 +32,8 @@
                 @yield('content')
         </div> <!-- /container -->
 
-        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-        <script>window.jQuery || document.write("{{ HTML::script('packages/jquery/jquery.js') }}")</script>
+<!--        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>-->
+<!--        <script>window.jQuery || document.write("{{ HTML::script('packages/jquery/jquery.js') }}")</script>-->
         {{ HTML::script('packages/jquery/jquery.js')}}
         {{ HTML::script('packages/bootstrap/js/bootstrap.min.js')}}
         {{ HTML::script('packages/js/main.js')}}
