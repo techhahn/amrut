@@ -31,7 +31,7 @@
 
                     <li class="divider"></li>
                     <li><a href="#">Rep</a></li>
-                    <li><a href="#">Area</a></li>
+                    <li>{{ HTML::link('areas/area', 'Area') }}</li>
                     <li><a href="#">Bank Area</a></li>
                     <li><a href="#">Town</a></li>
 

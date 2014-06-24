@@ -14,7 +14,9 @@
 Route::controller('users', 'UsersController');
 Route::controller('dashboard', 'DashboardController');
 
+Route::resource('areas', 'AreasController');
+
 Route::get('/', function()
 {
-    Auth::logout();
+    Redirect::to('dashboard/dashboard');
 });

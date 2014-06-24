@@ -10,4 +10,15 @@ $(document).ready(function() {
         $("div.bhoechie-tab>div.bhoechie-tab-content").removeClass("active");
         $("div.bhoechie-tab>div.bhoechie-tab-content").eq(index).addClass("active");
     });
+
+    var deleteArea = function(id) {
+        $.ajax({
+            url: 'areas/'+id,
+            type: "DELETE",
+            data: {/* the id goes here */},
+            success: function(data, textStatus, jqXHR) {
+                console.log("success");
+            }
+        });
+    }
 });
