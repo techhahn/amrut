@@ -1,4 +1,7 @@
 $(document).ready(function() {
+
+    $(".alert").delay(2000).slideUp(500);
+
     $("div.bhoechie-tab-menu>div.list-group>a").click(function(e) {
         e.preventDefault();
         $(this).siblings('a.active').removeClass("active");
