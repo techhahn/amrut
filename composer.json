@@ -3,9 +3,7 @@
 	"description": "The Laravel Framework.",
 	"keywords": ["framework", "laravel"],
 	"require": {
-		"laravel/framework": "4.0.*",
-        "twitter/bootstrap": "*",
-        "components/jquery": "1.9.*"
+		"laravel/framework": "4.0.*"
 	},
     "require-dev": {
         "way/generators": "2.*"
