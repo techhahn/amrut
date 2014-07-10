@@ -1,0 +1,1 @@
+C:\wamp\www\amrut\app/views/areas/show.blade.php

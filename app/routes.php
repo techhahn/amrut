@@ -14,7 +14,10 @@
 Route::controller('users', 'UsersController');
 Route::controller('dashboard', 'DashboardController');
 
-Route::get('/', function()
-{
-    Auth::logout();
-});
+Route::resource('areas', 'AreasController');
+Route::resource('towns', 'TownsController');
+Route::resource('products', 'ProductsController');
+
+Route::get('login', 'UsersController@getLogin');
+
+Route::get('/', 'UsersController@getLogin');

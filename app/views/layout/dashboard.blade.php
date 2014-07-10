@@ -1,5 +1,9 @@
 @extends('layout.main')
 
+@section('title')
+    dashboard
+@stop
+
 @section('content')
 
 <div class="row">

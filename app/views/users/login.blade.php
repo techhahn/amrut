@@ -1,5 +1,9 @@
 @extends('layout.main')
 
+@section('title')
+    Login Please to sell medicines!
+@stop
+
 @section('content')
 
 
