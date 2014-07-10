@@ -1,8 +1,8 @@
 <?php
 
-class AreasController extends \BaseController {
+class TownsController extends \BaseController {
 
-    public function __construct() {
+	public function __construct() {
         $this->beforeFilter('csrf', array('on'=>'post'));
         $this->beforeFilter('auth');
     }
@@ -15,7 +15,7 @@ class AreasController extends \BaseController {
 	 */
 	public function index()
 	{
-		return View::make('areas.index')->with('towns', Area::all());
+		return View::make('towns.index')->with('towns', Town::all());
 	}
 
 	/**
@@ -26,7 +26,7 @@ class AreasController extends \BaseController {
 	 */
 	public function create()
 	{
-        return View::make('areas.create');
+        return View::make('towns.create');
 	}
 
 	/**
@@ -37,16 +37,16 @@ class AreasController extends \BaseController {
 	 */
 	public function store()
 	{
-		$validator = Validator::make(Input::all(), Area::$rules);
+		$validator = Validator::make(Input::all(), Town::$rules);
 
         if($validator->passes()) {
-            $area = new Area;
-            $area->TownName = Input::get('TownName');
-            $area->save();
-            return Redirect::to('areas')->with('message', 'New town '. $area->TownName . ' sucessfully added');
+            $town = new Town;
+            $town->TownName = Input::get('TownName');
+            $town->save();
+            return Redirect::to('towns')->with('message', 'New town '. $town->TownName . ' sucessfully added');
         }
         else {
-            return Redirect::to('areas/create')->withErrors($validator)->withInput();
+            return Redirect::to('towns/create')->withErrors($validator)->withInput();
         }
 	}
 
@@ -71,8 +71,8 @@ class AreasController extends \BaseController {
 	 */
 	public function edit($id)
 	{
-		$town = Area::find($id);
-        return View::make('areas.edit')->with('town', $town);
+		$town = Town::find($id);
+        return View::make('towns.edit')->with('town', $town);
 	}
 
 	/**
@@ -84,16 +84,16 @@ class AreasController extends \BaseController {
 	 */
 	public function update($id)
 	{
-        $validator = Validator::make(Input::all(), Area::$rules);
+        $validator = Validator::make(Input::all(), Town::$rules);
 
         if($validator->passes()) {
-            $area = Area::find($id);
-            $area->TownName = Input::get('TownName');
-            $area->save();
-            return Redirect::to('areas')->with('message', 'New town '. $area->TownName . ' sucessfully Edited Town Name');
+            $town = Town::find($id);
+            $town->TownName = Input::get('TownName');
+            $town->save();
+            return Redirect::to('towns')->with('message', 'New town '. $town->TownName . ' sucessfully Edited Town Name');
         }
         else {
-            return Redirect::to('areas/create')->withErrors($validator)->withInput();
+            return Redirect::to('towns/create')->withErrors($validator)->withInput();
         }
 	}
 
@@ -106,10 +106,11 @@ class AreasController extends \BaseController {
 	 */
 	public function destroy($id)
 	{
-		$area = Area::find($id);
-		$areaName = $area->TownName;
-		$area->delete();
-		return Redirect::to('towns')->with('message', 'Town '. $areaName .' deleted successfully!');
+		$town = Town::find($id);
+		$townName = $town->TownName;
+		$town->delete();
+		return Redirect::to('towns')->with('message', 'Town '. $townName .' deleted successfully!');
 	}
+
 
 }

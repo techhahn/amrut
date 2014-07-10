@@ -1,9 +1,9 @@
 <?php
 
-class Area extends \Eloquent {
+class Town extends \Eloquent {
 	protected $fillable = [];
 
-    protected $table = 'town';
+	protected $table = 'town';
 
     public static $rules = array(
         'TownName' => 'required|max:50',

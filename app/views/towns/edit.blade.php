@@ -9,7 +9,7 @@
             <li>{{ $error }}</li>
             @endforeach
         </ul>
-        {{ Form::model($town, array('method' => 'PATCH', 'class' => 'form-horizontal', 'role' => 'form', 'route' => array('areas.update', $town->id))) }}
+        {{ Form::model($town, array('method' => 'PATCH', 'class' => 'form-horizontal', 'role' => 'form', 'route' => array('towns.update', $town->id))) }}
         <div class="form-group">
             <label for="town" class="col-sm-2 control-label">Town Name</label>
             <div class="col-sm-10">
@@ -19,7 +19,7 @@
         <div class="form-group">
             <div class="col-sm-offset-2 col-sm-10">
                 {{ Form::submit('Save', ['class'=>'btn btn-default']) }}
-                <a href="{{url('/areas')}}" class="btn btn-danger">Cancel</a>
+                <a href="{{url('/towns')}}" class="btn btn-danger">Cancel</a>
             </div>
         </div>
         {{ Form::close() }}

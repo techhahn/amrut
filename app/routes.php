@@ -15,8 +15,9 @@ Route::controller('users', 'UsersController');
 Route::controller('dashboard', 'DashboardController');
 
 Route::resource('areas', 'AreasController');
+Route::resource('towns', 'TownsController');
+Route::resource('products', 'ProductsController');
 
-Route::get('/', function()
-{
-    Redirect::to('dashboard/dashboard');
-});
+Route::get('login', 'UsersController@getLogin');
+
+Route::get('/', 'UsersController@getLogin');
